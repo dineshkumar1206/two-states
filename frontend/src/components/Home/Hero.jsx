@@ -2,37 +2,10 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="relative w-full min-h-screen bg-[#f8f6f0] overflow-hidden flex items-center pt-40 lg:pt-48 pb-12 font-montserrat">
-      {/* Background Color Splashes */}
-      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#89c5cc] rounded-full mix-blend-multiply filter blur-[120px] opacity-40 pointer-events-none"></div>
-      <div className="absolute top-[0%] right-[-10%] w-[600px] h-[600px] bg-[#f9d77e] rounded-full mix-blend-multiply filter blur-[150px] opacity-40 pointer-events-none"></div>
-      <div className="absolute bottom-[-10%] left-[10%] w-[400px] h-[400px] bg-[#f9d77e] rounded-full mix-blend-multiply filter blur-[120px] opacity-30 pointer-events-none"></div>
-      <div className="absolute bottom-[20%] right-[-5%] w-[300px] h-[300px] bg-[#89c5cc] rounded-full mix-blend-multiply filter blur-[100px] opacity-30 pointer-events-none"></div>
-
-      {/* Background/Corner Images */}
-      <img 
-        src="/images/hero-topleft.png" 
-        alt="Golden Temple" 
-        className="absolute top-[40%] left-[-2%] w-[220px] md:w-[350px] opacity-80"
-        data-aos="fade-right" 
-        data-aos-duration="1500" 
-      />
-      <img 
-        src="/images/hero-topright-1.png" 
-        alt="India Gate" 
-        className="absolute top-[22%] right-[12%] w-[200px] md:w-[280px] opacity-90"
-        data-aos="fade-left" 
-        data-aos-duration="1500" 
-        data-aos-delay="200"
-      />
-      <img 
-        src="/images/hero-topright-2.png" 
-        alt="South Indian Temple" 
-        className="absolute top-[50%] right-[-5%] w-[180px] md:w-[250px] opacity-80"
-        data-aos="fade-left" 
-        data-aos-duration="1500" 
-        data-aos-delay="400"
-      />
+    <div 
+      className="relative w-full min-h-screen bg-[#fcfbf7] bg-contain bg-no-repeat bg-center overflow-hidden flex items-center pt-40 lg:pt-48 pb-12 font-montserrat"
+      style={{ backgroundImage: "url('/images/Websitebackground2_States.png')" }}
+    >
 
       <div className="container mx-auto px-12 md:px-24 flex flex-col md:flex-row items-center relative z-10">
         
