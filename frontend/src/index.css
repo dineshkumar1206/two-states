@@ -3,4 +3,16 @@
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
   --font-caveat: "Caveat", cursive;
+  --font-caveat-brush: "Caveat Brush", cursive;
+  --font-playfair: "Playfair Display", serif;
+  --font-marker: "Permanent Marker", cursive;
+}
+
+body {
+  background-color: #f8f6f0;
+  background-image: url('/images/Websitebackground2_States.png');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }

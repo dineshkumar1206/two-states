@@ -2,12 +2,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div 
-      className="relative w-full min-h-screen bg-[#fcfbf7] bg-contain bg-no-repeat bg-center overflow-hidden flex items-center pt-40 lg:pt-48 pb-12 font-montserrat"
-      style={{ backgroundImage: "url('/images/Websitebackground2_States.png')" }}
-    >
+    <div className="relative w-full min-h-screen overflow-hidden flex items-center pt-32 lg:pt-36 pb-12 font-montserrat">
 
-      <div className="container mx-auto px-12 md:px-24 flex flex-col md:flex-row items-center relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center relative z-10">
         
         {/* Left Content Area */}
         <div className="w-full md:w-1/2 flex flex-col justify-center mt-12 md:mt-0">
