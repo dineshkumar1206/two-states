@@ -2,7 +2,7 @@ import React from 'react';
 
 const OurProof = () => {
   return (
-    <div className="relative w-full min-h-screen font-poppins z-10 pt-16 pb-16 overflow-hidden flex flex-col lg:block justify-center">
+    <div className="relative w-full min-h-screen font-poppins z-10 pt-16 pb-16 overflow-hidden flex flex-col-reverse lg:block justify-center">
       
       {/* Background Image with Fade */}
       <div 
