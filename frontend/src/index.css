@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-montserrat: "Montserrat", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
   --font-caveat: "Caveat", cursive;
   --font-caveat-brush: "Caveat Brush", cursive;
-  --font-playfair: "Playfair Display", serif;
-  --font-marker: "Permanent Marker", cursive;
 }
 
 body {
