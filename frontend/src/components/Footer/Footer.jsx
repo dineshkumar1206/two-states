@@ -6,22 +6,24 @@ const Footer = () => {
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
         
         {/* Left: Logo */}
-        <div className="shrink-0 flex justify-center lg:justify-start w-full lg:w-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
-          {/* Using your standard logo, rename if it differs */}
-          <img src="/images/logo.png" alt="2 States Logo" className="h-14 sm:h-16 object-contain" />
+        <div className="shrink-0 flex justify-center lg:justify-start w-full lg:w-auto">
+          {/* Using the exact logo from Navbar, increased size */}
+          <img src="/images/2-states-Logo.png" alt="2 States Logo" className="h-24 sm:h-28 md:h-[100px] object-contain drop-shadow-sm" />
         </div>
 
         {/* Middle: Links */}
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[11px] md:text-[12px] font-bold text-[#2c4755] uppercase tracking-wider w-full lg:w-auto lg:border-l lg:border-r lg:border-gray-300 lg:px-12" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[11px] md:text-[12px] font-bold text-[#2c4755] uppercase tracking-wider w-full lg:w-auto lg:border-l lg:border-r lg:border-gray-300 lg:px-12">
           <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">HOME</a>
           <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">OUR STORY</a>
-          <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">OUR BRANDS</a>
+          <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">FOOD</a>
           <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">ENTERPRISE</a>
+          <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">OUR BRANDS</a>
+          <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">CAREERS</a>
           <a href="#" className="hover:text-[#06b6d4] transition-colors duration-300">CONTACT</a>
         </div>
 
         {/* Right: Address / Info */}
-        <div className="text-center lg:text-left flex flex-col items-center lg:items-start shrink-0 w-full lg:w-auto" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
+        <div className="text-center lg:text-left flex flex-col items-center lg:items-start shrink-0 w-full lg:w-auto">
           <h4 className="font-bold text-[#1f3f4a] text-sm mb-1.5">4S Hospitality LLP</h4>
           <p className="text-[#64748b] text-[11.5px] font-medium leading-relaxed max-w-[280px] lg:max-w-none">
             Our operating partners: WeTreat Inc & Bombay Bytes Co.
