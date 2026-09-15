@@ -14,3 +14,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('/images/mobile-BG.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+

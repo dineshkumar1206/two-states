@@ -46,8 +46,8 @@ const OurProof = () => {
 
           {/* Heading */}
           <h2 className="font-caveat-brush font-bold text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#134954] tracking-wider drop-shadow-md transform -rotate-1 origin-left w-full mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
-            <span className="whitespace-normal sm:whitespace-nowrap">WE DON'T JUST</span><br className="hidden sm:block" />
-            <span className="whitespace-normal sm:whitespace-nowrap">TALK ABOUT DINING.</span><br className="hidden sm:block" />
+            <span className="whitespace-normal sm:whitespace-nowrap">WE DON'T JUST</span> <br className="hidden sm:block" />
+            <span className="whitespace-normal sm:whitespace-nowrap">TALK ABOUT DINING.</span> <br className="hidden sm:block" />
             <span className="text-[#fbce3a] whitespace-normal sm:whitespace-nowrap">WE OPERATE IT.</span>
           </h2>
 
@@ -98,8 +98,8 @@ const OurProof = () => {
               <div className="w-6 h-[1px] bg-[#2c4755]"></div>
             </div>
             <h3 className="font-caveat-brush font-bold text-3xl md:text-4xl text-[#134954] leading-[1.1] transform -rotate-1 origin-left tracking-wider drop-shadow-sm mt-4 w-full">
-              <span className="whitespace-normal sm:whitespace-nowrap">3 LIVE COUNTERS.</span><br className="hidden sm:block" />
-              <span className="whitespace-normal sm:whitespace-nowrap">A STRONGER</span><br className="hidden sm:block" />
+              <span className="whitespace-normal sm:whitespace-nowrap">3 LIVE COUNTERS.</span> <br className="hidden sm:block" />
+              <span className="whitespace-normal sm:whitespace-nowrap">A STRONGER</span> <br className="hidden sm:block" />
               <span className="whitespace-normal sm:whitespace-nowrap">DINING EXPERIENCE.</span>
             </h3>
             <div className="h-[3px] w-3/4 max-w-[200px] bg-[#fbce3a] mt-3 mx-auto lg:mx-0 rounded-full transform -rotate-2 opacity-90"></div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const OurFormat = () => {
   return (
-    <div className="relative w-full min-h-screen font-poppins z-10 pt-20 lg:pt-0 pb-16 lg:pb-0 overflow-hidden flex flex-col-reverse lg:flex-row items-center justify-center">
+    <div className="relative w-full min-h-screen font-poppins z-10 pt-8 lg:pt-0 pb-16 lg:pb-0 overflow-hidden flex flex-col-reverse lg:flex-row items-center justify-center">
       
       {/* Background Image with Fade */}
       <div 

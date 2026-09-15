@@ -12,7 +12,8 @@ const BRANDS_DATA = [
     tagline: "SOUTH INDIAN | EVERYDAY", 
     logo: "/images/idlish-logo.png", 
     link: "https://idlish.shop/",
-    aosDelay: "300" 
+    aosDelay: "300",
+    imgClass: "h-20 sm:h-24 w-auto"
   },
   { 
     id: 2, 
@@ -20,15 +21,17 @@ const BRANDS_DATA = [
     tagline: "TRADITIONAL | TIMELESS", 
     logo: "/images/chettinad-logo.png", 
     link: "https://chettinad.co.in/",
-    aosDelay: "450" 
+    aosDelay: "450",
+    imgClass: "h-32 sm:h-40 w-auto"
   },
   { 
     id: 3, 
     name: "iDaily", 
     tagline: "SIMPLE | NUTRITIOUS | DELICIOUS", 
-    logo: "/images/idaily-logo.jpeg", 
+    logo: "/images/idaily-logo.webp", 
     link: "#",
-    aosDelay: "600" 
+    aosDelay: "600",
+    imgClass: "h-28 sm:h-36 w-auto"
   },
   { 
     id: 4, 
@@ -36,13 +39,14 @@ const BRANDS_DATA = [
     tagline: "BOLD FLAVOURS | ON THE GO", 
     logo: "/images/naanstop-logo.png", 
     link: "#",
-    aosDelay: "750" 
+    aosDelay: "750",
+    imgClass: "h-20 sm:h-24 w-auto scale-[1.5] sm:scale-[1.7]"
   }
 ];
 
 const Behind = () => {
   return (
-    <div className="relative w-full py-16 lg:py-24 font-poppins z-10 overflow-hidden">
+    <div className="relative w-full pt-16 pb-4 lg:pt-24 lg:pb-8 font-poppins z-10 overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           
@@ -61,8 +65,8 @@ const Behind = () => {
 
             {/* Heading */}
             <h2 className="font-caveat-brush font-black text-4xl sm:text-5xl lg:text-[60px] xl:text-[70px] leading-[1.05] text-[#134954] tracking-normal w-full transform -rotate-1 origin-left drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)] mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
-              <span className="whitespace-normal sm:whitespace-nowrap">GOOD FOOD</span><br className="hidden sm:block" />
-              <span className="whitespace-normal sm:whitespace-nowrap">ALWAYS STARTS</span><br className="hidden sm:block" />
+              <span className="whitespace-normal sm:whitespace-nowrap">GOOD FOOD</span> <br className="hidden sm:block" />
+              <span className="whitespace-normal sm:whitespace-nowrap">ALWAYS STARTS</span> <br className="hidden sm:block" />
               <span className="text-[#06b6d4] whitespace-normal sm:whitespace-nowrap block mt-1 lg:mt-2">WITH PEOPLE.</span>
             </h2>
 
@@ -123,17 +127,11 @@ const Behind = () => {
 
               {BRANDS_DATA.map((brand) => (
                 <a href={brand.link} key={brand.id} className="flex flex-col items-center justify-center relative p-4 group cursor-pointer" data-aos="zoom-in" data-aos-duration="800" data-aos-delay={brand.aosDelay} data-aos-once="false">
-                  <div className="h-32 md:h-40 flex items-center justify-center mb-6 w-full transition-transform duration-300 group-hover:-translate-y-2">
+                  <div className="h-24 md:h-28 flex items-center justify-center w-full transition-transform duration-300 group-hover:-translate-y-2">
                     {/* Brand Logo */}
-                    <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain transform scale-110 md:scale-125 transition-transform duration-300 group-hover:scale-110 md:group-hover:scale-125" />
+                    <img src={brand.logo} alt={brand.name} className={`${brand.imgClass} object-contain transition-transform duration-300 group-hover:scale-110`} />
                   </div>
-                  <div className="flex flex-col items-center w-full">
-                    <div className="w-10 h-[2px] bg-[#fbce3a] mb-3 transition-all duration-300 group-hover:w-16"></div>
-                    <span className="text-[9px] md:text-[10px] font-bold tracking-[0.15em] text-[#2c4755] uppercase text-center group-hover:text-[#134954] transition-colors duration-300">
-                      {brand.tagline}
-                    </span>
-                  </div>
-                </a>
+                  {/* Brand Logo only (tagline removed) */}                </a>
               ))}
 
             </div>
