@@ -28,6 +28,9 @@ const Footer = () => {
           <p className="text-[#64748b] text-[11.5px] font-medium leading-relaxed max-w-[280px] lg:max-w-none">
             Our operating partners: WeTreat Inc & Bombay Bytes Co.
           </p>
+          <p className="text-[#84a3b3] text-[10.5px] mt-2.5 font-medium">
+            Designed and developed by <a href="https://amigowebster.com/" target="_blank" rel="noopener noreferrer" className="text-[#06b6d4] hover:text-[#134954] hover:underline transition-colors duration-300">amigowebster</a>
+          </p>
         </div>
 
       </div>
