@@ -46,7 +46,7 @@ const BRANDS_DATA = [
 
 const Behind = () => {
   return (
-    <div className="relative w-full pt-16 pb-0 -mb-24 sm:mb-0 lg:pt-24 lg:pb-8 font-poppins z-10 overflow-hidden">
+    <div className="relative w-full pt-16 pb-4 sm:pb-0 mb-0 sm:mb-0 lg:pt-24 lg:pb-8 font-poppins z-10 overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           
