@@ -50,7 +50,7 @@ const OurBelife = () => {
 
           {/* Marker Heading - Increased weight & subtle text-shadow for punch */}
           <h2 className="font-caveat-brush text-[2.5rem] sm:text-5xl lg:text-[56px] xl:text-[58px] leading-[1.1] font-black text-[#103b44] mt-4 tracking-normal drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150" data-aos-once="false">
-            FOOD IS BETTER<br className="hidden sm:block" />
+            FOOD IS BETTER <br className="hidden sm:block" />
             WHEN PEOPLE<br className="hidden sm:block" />
             <span className="text-[#05a6c2] whitespace-normal sm:whitespace-nowrap"> COME TOGETHER.</span>
           </h2>

@@ -7,7 +7,7 @@ import OurFormat from '../../components/Home/OurFormat';
 import OurProof from '../../components/Home/OurProof';
 import Behind from '../../components/Home/Behind';
 import Eat from '../../components/Home/Eat';
-import Footer from '../../components/Footer/Footer';
+
 
 const Home = () => {
   return (
@@ -20,7 +20,6 @@ const Home = () => {
       <OurProof />
       <Behind />
       <Eat />
-      <Footer />
     </div>
   );
 };

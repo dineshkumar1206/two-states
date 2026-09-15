@@ -2,7 +2,7 @@ import React from 'react';
 
 const OurStory = () => {
   return (
-    <div className="relative w-full py-20 lg:py-32 font-poppins z-10">
+    <div className="relative w-full pt-20 pb-4 md:py-20 lg:py-32 font-poppins z-10">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
         
         {/* 3 Column Grid */}
@@ -72,13 +72,13 @@ const OurStory = () => {
               className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#103b44] leading-[1.05]"
               style={{ WebkitTextStroke: '1.5px #103b44' }}
             >
-              We respect<br />the recipe.
+              We respect<br className="hidden md:block" /> the recipe.
             </h2>
             <h2 
               className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#05a6c2] leading-[1.05] mt-1 lg:mt-2"
               style={{ WebkitTextStroke: '1.5px #05a6c2' }}
             >
-              We rethink<br />the experience.
+              We rethink<br className="hidden md:block" /> the experience.
             </h2>
             {/* Simulated Brush Underline */}
             <div className="h-[4px] w-full max-w-[85%] bg-[#f5b82e] mt-4 lg:mt-5 rounded-full transform -rotate-1 opacity-95"></div>
