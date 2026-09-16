@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import ContactModal from './ContactModal';
 
 const Eat = () => {
@@ -11,8 +11,11 @@ const Eat = () => {
     offset: ["start end", "end start"]
   });
 
-  // Walk-through effect: scale up as user scrolls
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
+  const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
+  
+  const imageScale = useTransform(smoothProgress, [0, 1], [1.02, 1.65]);
+  const imageX = useTransform(smoothProgress, [0, 1], ["0%", "-15%"]);
+  const imageY = useTransform(smoothProgress, [0, 1], ["0%", "4%"]);
 
   return (
     <div ref={containerRef} className="relative w-full h-screen min-h-[700px] max-h-[1000px] font-poppins z-10 flex flex-col items-center justify-center overflow-hidden">
@@ -22,9 +25,11 @@ const Eat = () => {
         <motion.img 
           src="/images/cafeteria-bg.webp" 
           alt="Cafeteria"
-          className="w-full h-full object-cover object-bottom"
+          className="w-[125%] max-w-none h-full object-cover object-bottom"
           style={{ 
-            scale, 
+            scale: imageScale,
+            x: imageX,
+            y: imageY,
             WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, transparent 35%, rgba(0,0,0,0.8) 60%, black 100%)',
             maskImage: 'linear-gradient(to bottom, transparent 0%, transparent 35%, rgba(0,0,0,0.8) 60%, black 100%)'
           }}
@@ -80,7 +85,7 @@ const Eat = () => {
             {/* Contact Us Button */}
             <button 
               onClick={() => setIsModalOpen(true)}
-              className="bg-[#134954] hover:bg-[#0f3a43] text-white font-bold text-sm md:text-base px-8 py-3.5 rounded-full flex items-center space-x-3 transition-colors duration-300 shadow-md"
+              className="bg-[#134954] cursor-pointer hover:bg-[#0f3a43] text-white font-bold text-sm md:text-base px-8 py-3.5 rounded-full flex items-center space-x-3 transition-colors duration-300 shadow-md"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               <span className="tracking-wide">CONTACT US</span>
