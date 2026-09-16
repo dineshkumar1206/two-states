@@ -58,8 +58,8 @@ const OurBelife = () => {
           {/* Simulated Brush Underline */}
           <div className="h-[4.5px] w-2/3 max-w-[280px] bg-[#f5b82e] mt-3.5 mx-auto lg:mx-0 rounded-full transform -rotate-2 opacity-95" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" data-aos-once="false"></div>
 
-          {/* Paragraphs - Bolder & darker for clear contrast */}
-          <div className="mt-8 text-[14px] md:text-[15px] font-bold text-[#1a444e] leading-[1.65] max-w-[420px] mx-auto lg:mx-0 space-y-3.5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
+          {/* Paragraphs - Regular & dark blue */}
+          <div className="mt-8 text-[14px] md:text-[15px] font-normal text-blue-900 leading-[1.65] max-w-[420px] mx-auto lg:mx-0 space-y-3.5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
             <p>From a table for two to a table for thousands, food has always been about bringing people together.</p>
             <p>It creates conversations, breaks routines, brings people closer and turns everyday moments into something worth remembering.</p>
             <p>At 2 States, we bring that same spirit to every place people eat, meet and connect.</p>

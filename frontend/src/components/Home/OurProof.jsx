@@ -62,7 +62,7 @@ const OurProof = () => {
           <h2 className="font-caveat-brush font-bold text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#134954] tracking-wider drop-shadow-md transform -rotate-1 w-full mt-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
             <span className="whitespace-normal sm:whitespace-nowrap">WE DON'T JUST</span> <br className="hidden sm:block" />
             <span className="whitespace-normal sm:whitespace-nowrap">TALK ABOUT DINING.</span> <br className="hidden sm:block" />
-            <span className="text-[#fbce3a] whitespace-normal sm:whitespace-nowrap">WE OPERATE IT.</span>
+            <span className="text-[#fbce3a] whitespace-nowrap">WE OPERATE IT.</span>
           </h2>
 
           {/* Paragraphs */}

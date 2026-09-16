@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Home />
       <Footer />
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
     </>
   );
 }
