@@ -1,4 +1,5 @@
 import React from 'react';
+import Scroll from '../Scroll';
 
 const Footer = () => {
   return (
@@ -13,11 +14,11 @@ const Footer = () => {
 
         {/* Middle: Links */}
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[11px] md:text-[12px] font-bold text-[#2c4755] uppercase tracking-wider w-full lg:w-auto lg:border-l lg:border-r lg:border-gray-300 lg:px-12">
-          <a href="/" className="hover:text-[#06b6d4] transition-colors duration-300">HOME</a>
-          <a href="#our-story" className="hover:text-[#06b6d4] transition-colors duration-300">OUR STORY</a>
-          <a href="#build" className="hover:text-[#06b6d4] transition-colors duration-300">ENTERPRISE</a>
-          <a href="#behind" className="hover:text-[#06b6d4] transition-colors duration-300">OUR BRANDS</a>
-          <a href="#contact" className="hover:text-[#06b6d4] transition-colors duration-300">CONTACT</a>
+          <Scroll to="/" className="hover:text-[#06b6d4] transition-colors duration-300">HOME</Scroll>
+          <Scroll to="#our-story" className="hover:text-[#06b6d4] transition-colors duration-300">OUR STORY</Scroll>
+          <Scroll to="#build" className="hover:text-[#06b6d4] transition-colors duration-300">ENTERPRISE</Scroll>
+          <Scroll to="#behind" className="hover:text-[#06b6d4] transition-colors duration-300">OUR BRANDS</Scroll>
+          <Scroll to="#contact" className="hover:text-[#06b6d4] transition-colors duration-300">CONTACT</Scroll>
         </div>
 
         {/* Right: Address / Info */}
