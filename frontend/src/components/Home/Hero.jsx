@@ -27,7 +27,7 @@ const Hero = () => {
           </h1>
           
           <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#333] mt-6 sm:mt-8 tracking-wide" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">
-            Different cultures. Different flavours.<br/> One table.
+            Different cultures.<br className="block md:hidden"/> Different flavours.<br/> One table.
           </h3>
           
           <p className="text-[#555] text-sm sm:text-base lg:text-[17px] max-w-md mx-auto md:mx-0 mt-4 sm:mt-5 leading-relaxed font-medium" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
