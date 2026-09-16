@@ -37,12 +37,12 @@ const Eat = () => {
       <div className="relative w-full max-w-4xl mx-auto px-4 md:px-8 flex flex-col items-center text-center z-20 mt-[-5%]">
         
         {/* Overline */}
-        <div className="flex items-center space-x-4 mb-6" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false">
+        {/* <div className="flex items-center space-x-4 mb-6" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false">
           <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#2c4755] uppercase">
             <span className="mr-2">10</span> LET'S EAT TOGETHER
           </span>
           <div className="w-12 h-[1px] bg-[#2c4755]"></div>
-        </div>
+        </div> */}
 
         {/* Heading */}
         <div className="relative mb-10 w-full flex flex-col items-center" data-aos="fade-up" data-aos-duration="1200" data-aos-once="false">

@@ -56,12 +56,12 @@ const Behind = () => {
             <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[1px] bg-gray-200"></div>
 
             {/* Overline */}
-            <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
+            {/* <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
               <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#2c4755] uppercase">
                 <span className="mr-2">09</span> BEHIND THE BRANDS
               </span>
               <div className="w-12 h-[1px] bg-[#2c4755]"></div>
-            </div>
+            </div> */}
 
             {/* Heading */}
             <h2 className="font-caveat-brush font-black text-4xl sm:text-5xl lg:text-[60px] xl:text-[70px] leading-[1.05] text-[#134954] tracking-normal w-full transform -rotate-1 origin-left drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)] mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
@@ -129,7 +129,9 @@ const Behind = () => {
                 <a href={brand.link} key={brand.id} className="flex flex-col items-center justify-center relative p-4 group cursor-pointer" data-aos="zoom-in" data-aos-duration="800" data-aos-delay={brand.aosDelay} data-aos-once="false">
                   <div className="h-24 md:h-28 flex items-center justify-center w-full transition-transform duration-300 group-hover:-translate-y-2">
                     {/* Brand Logo */}
-                    <img src={brand.logo} alt={brand.name} className={`${brand.imgClass} object-contain transition-transform duration-300 group-hover:scale-110`} />
+                    <div className="transition-transform duration-300 group-hover:scale-110 flex items-center justify-center w-full h-full">
+                      <img src={brand.logo} alt={brand.name} className={`${brand.imgClass} object-contain`} />
+                    </div>
                   </div>
                   {/* Brand Logo only (tagline removed) */}                </a>
               ))}

@@ -46,12 +46,12 @@ const Build = () => {
           {/* Left Column: Heading */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
             {/* Overline */}
-            <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
+            {/* <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
               <span className="text-[11px] md:text-xs font-black tracking-[0.22em] text-[#1f3f4a] uppercase">
                 FOR ENTERPRISES
               </span>
               <div className="w-10 h-[1.5px] bg-[#1f3f4a]"></div>
-            </div>
+            </div> */}
 
             {/* Marker Heading */}
             <h2 className="font-caveat-brush font-bold text-4xl sm:text-5xl lg:text-[56px] xl:text-[64px] leading-[1.05] text-[#134954] mt-2 tracking-wide w-full" style={{ WebkitTextStroke: '1.5px #134954' }} data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
@@ -82,14 +82,14 @@ const Build = () => {
             </p>
 
             {/* CTA Button */}
-            <div className="mt-8 lg:mt-10 flex justify-center lg:justify-start w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="false">
+            {/* <div className="mt-8 lg:mt-10 flex justify-center lg:justify-start w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="false">
               <button className="bg-[#fbce3a] hover:bg-[#eab308] text-[#134954] font-black text-[11px] sm:text-xs lg:text-[13px] tracking-[0.12em] px-8 py-4 rounded-full flex items-center space-x-3 transition-transform duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
                 <span>EXPLORE ENTERPRISE DINING</span>
                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </button>
-            </div>
+            </div> */}
 
           </div>
 

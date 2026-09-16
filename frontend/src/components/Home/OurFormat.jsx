@@ -37,12 +37,12 @@ const OurFormat = () => {
         {/* Top Text Section */}
         <div className="w-full lg:w-[50%] mt-8 lg:mt-0 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
           {/* Overline */}
-          <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
+          {/* <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
             <span className="text-[11px] md:text-xs font-black tracking-[0.22em] text-[#1f3f4a] uppercase">
               OUR FORMATS
             </span>
             <div className="w-10 h-[1.5px] bg-[#1f3f4a]"></div>
-          </div>
+          </div> */}
 
           {/* Heading */}
           <h2 className="font-caveat-brush text-4xl sm:text-5xl lg:text-[60px] xl:text-[68px] leading-[1.05] font-black text-[#134954] tracking-normal w-full transform -rotate-1 origin-left drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)] mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">

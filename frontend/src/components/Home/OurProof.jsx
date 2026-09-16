@@ -37,12 +37,12 @@ const OurProof = () => {
         {/* Top Text Section */}
         <div className="w-full lg:w-[50%] mt-8 lg:mt-12 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
           {/* Overline */}
-          <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
+          {/* <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
             <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#2c4755] uppercase">
               <span className="mr-2">07</span> OUR PROOF
             </span>
             <div className="w-12 h-[1px] bg-[#2c4755]"></div>
-          </div>
+          </div> */}
 
           {/* Heading */}
           <h2 className="font-caveat-brush font-bold text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#134954] tracking-wider drop-shadow-md transform -rotate-1 origin-left w-full mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
