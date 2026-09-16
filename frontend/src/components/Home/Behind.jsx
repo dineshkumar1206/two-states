@@ -126,14 +126,25 @@ const Behind = () => {
               <div className="hidden sm:block absolute top-0 bottom-0 left-1/2 w-[1px] bg-gray-200 -translate-x-1/2"></div>
 
               {BRANDS_DATA.map((brand) => (
-                <a href={brand.link} key={brand.id} className="flex flex-col items-center justify-center relative p-4 group cursor-pointer" data-aos="zoom-in" data-aos-duration="800" data-aos-delay={brand.aosDelay} data-aos-once="false">
-                  <div className="h-24 md:h-28 flex items-center justify-center w-full transition-transform duration-300 group-hover:-translate-y-2">
-                    {/* Brand Logo */}
-                    <div className="transition-transform duration-300 group-hover:scale-110 flex items-center justify-center w-full h-full">
-                      <img src={brand.logo} alt={brand.name} className={`${brand.imgClass} object-contain`} />
+                brand.link !== "#" ? (
+                  <a href={brand.link} key={brand.id} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center relative p-4 group cursor-pointer" data-aos="zoom-in" data-aos-duration="800" data-aos-delay={brand.aosDelay} data-aos-once="false">
+                    <div className="h-24 md:h-28 flex items-center justify-center w-full transition-transform duration-300 group-hover:-translate-y-2">
+                      {/* Brand Logo */}
+                      <div className="transition-transform duration-300 group-hover:scale-110 flex items-center justify-center w-full h-full">
+                        <img src={brand.logo} alt={brand.name} className={`${brand.imgClass} object-contain`} />
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div key={brand.id} className="flex flex-col items-center justify-center relative p-4 group" data-aos="zoom-in" data-aos-duration="800" data-aos-delay={brand.aosDelay} data-aos-once="false">
+                    <div className="h-24 md:h-28 flex items-center justify-center w-full transition-transform duration-300 group-hover:-translate-y-2">
+                      {/* Brand Logo */}
+                      <div className="transition-transform duration-300 group-hover:scale-110 flex items-center justify-center w-full h-full">
+                        <img src={brand.logo} alt={brand.name} className={`${brand.imgClass} object-contain`} />
+                      </div>
                     </div>
                   </div>
-                  {/* Brand Logo only (tagline removed) */}                </a>
+                )
               ))}
 
             </div>

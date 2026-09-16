@@ -24,8 +24,10 @@ const Build = () => {
         <div 
           className="w-full h-[200px] md:h-[300px] lg:h-[450px] xl:h-[550px] overflow-hidden flex items-center justify-start"
           style={{
-            WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 25%)',
-            maskImage: 'linear-gradient(to top, transparent 0%, black 25%)'
+            WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 75%, transparent 100%)',
+            WebkitMaskComposite: 'destination-in',
+            maskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 75%, transparent 100%)',
+            maskComposite: 'intersect'
           }}
         >
           <motion.img 

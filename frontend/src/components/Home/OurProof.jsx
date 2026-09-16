@@ -1,32 +1,45 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const OurProof = () => {
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
+  const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
+  
+  const imageScale = useTransform(smoothProgress, [0, 1], [1.02, 1.65]);
+  const imageX = useTransform(smoothProgress, [0, 1], ["0%", "-15%"]);
+  const imageY = useTransform(smoothProgress, [0, 1], ["0%", "4%"]);
+
   return (
-    <div className="relative w-full min-h-screen font-poppins z-10 pt-16 pb-16 overflow-hidden flex flex-col-reverse lg:block justify-center">
+    <div ref={containerRef} className="relative w-full min-h-screen font-poppins z-10 pt-16 pb-16 overflow-hidden flex flex-col-reverse lg:block justify-center">
       
       {/* Background Image with Fade */}
       <div 
-        className="w-full lg:w-[55%] xl:w-[50%] lg:absolute lg:right-0 lg:top-16 h-[300px] sm:h-[400px] lg:h-[450px] xl:h-[480px] flex items-center justify-end pointer-events-none z-0 mt-8 lg:mt-0 overflow-hidden" 
-        data-aos="fade-left" 
+        className="absolute top-0 left-0 w-full h-[350px] sm:h-[450px] lg:h-[550px] pointer-events-none z-0 overflow-hidden" 
+        data-aos="fade-down" 
         data-aos-duration="1500" 
         data-aos-once="false"
+        style={{
+          /* Fade in at the top and fade out at the bottom, applied to container so it doesn't move with the image */
+          WebkitMaskImage: `linear-gradient(to bottom, transparent 0%, black 20%, black 60%, transparent 100%)`,
+          WebkitMaskComposite: 'destination-in',
+          maskImage: `linear-gradient(to bottom, transparent 0%, black 20%, black 60%, transparent 100%)`,
+          maskComposite: 'intersect'
+        }}
       >
-        <img 
+        <motion.img 
           src="/images/proof.png" 
           alt="Kitchen Operations" 
-          className="w-full h-full object-cover object-[right_center]"
+          className="w-[125%] max-w-none h-full object-cover object-center origin-center"
           style={{
-            /* Smooth opacity: fades smoothly on the top, bottom, and left edge */
-            WebkitMaskImage: `
-              linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 35%),
-              linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 5%, black 15%, black 85%, rgba(0,0,0,0.6) 95%, transparent 100%)
-            `,
-            WebkitMaskComposite: 'destination-in',
-            maskImage: `
-              linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 15%, black 35%),
-              linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 5%, black 15%, black 85%, rgba(0,0,0,0.6) 95%, transparent 100%)
-            `,
-            maskComposite: 'intersect'
+            scale: imageScale,
+            x: imageX,
+            y: imageY
           }}
         />
       </div>
@@ -35,27 +48,25 @@ const OurProof = () => {
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 relative z-20 flex-1 flex flex-col">
         
         {/* Top Text Section */}
-        <div className="w-full lg:w-[50%] mt-8 lg:mt-12 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
-          {/* Overline */}
-          {/* <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#2c4755] uppercase">
-              <span className="mr-2">07</span> OUR PROOF
-            </span>
-            <div className="w-12 h-[1px] bg-[#2c4755]"></div>
-          </div> */}
+        <div className="w-full mt-[200px] sm:mt-[270px] lg:mt-[370px] flex flex-col items-center text-center relative" data-aos="fade-up" data-aos-duration="1200" data-aos-once="false">
+          
+          {/* Strong radial opacity behind the text to create a cutout/hill effect for maximum readability */}
+          <div 
+            className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] max-w-[1000px] h-[250%] -z-10 pointer-events-none blur-xl"
+            style={{
+              background: 'radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,245,0.85) 45%, transparent 70%)'
+            }}
+          ></div>
 
           {/* Heading */}
-          <h2 className="font-caveat-brush font-bold text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#134954] tracking-wider drop-shadow-md transform -rotate-1 origin-left w-full mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
+          <h2 className="font-caveat-brush font-bold text-4xl md:text-5xl lg:text-[4rem] leading-[1.1] text-[#134954] tracking-wider drop-shadow-md transform -rotate-1 w-full mt-2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
             <span className="whitespace-normal sm:whitespace-nowrap">WE DON'T JUST</span> <br className="hidden sm:block" />
             <span className="whitespace-normal sm:whitespace-nowrap">TALK ABOUT DINING.</span> <br className="hidden sm:block" />
             <span className="text-[#fbce3a] whitespace-normal sm:whitespace-nowrap">WE OPERATE IT.</span>
           </h2>
 
-          {/* Simulated Brush Underline */}
-          <div className="h-[4px] w-4/5 max-w-[350px] bg-[#fbce3a] mt-4 mx-auto lg:mx-0 rounded-full transform -rotate-2 opacity-90" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="false"></div>
-
           {/* Paragraphs */}
-          <div className="mt-8 text-[14px] md:text-[15px] font-medium text-[#134954] leading-relaxed max-w-md mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
+          <div className="mt-6 md:mt-8 text-[14px] md:text-[15px] font-medium text-[#134954] leading-relaxed max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
             <p>
               From cafés and resto-cafés to corporate and institutional dining, we've built our experience by putting food, people and operations together in the real world.
             </p>
@@ -63,26 +74,27 @@ const OurProof = () => {
         </div>
 
         {/* Middle Section: Serving */}
-        <div className="mt-12 lg:mt-16 flex flex-col items-center lg:items-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="false">
+        <div className="mt-10 lg:mt-12 flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="false">
           <div className="flex items-center space-x-4 mb-6">
+            <div className="hidden sm:block w-8 h-[1px] bg-[#2c4755]"></div>
             <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
               WHERE WE'RE ALREADY SERVING
             </span>
-            <div className="w-8 h-[1px] bg-[#2c4755]"></div>
+            <div className="hidden sm:block w-8 h-[1px] bg-[#2c4755]"></div>
           </div>
           
-          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-x-6 gap-y-4 lg:gap-x-12">
-            <span className="font-bold text-[#134954] text-lg lg:text-xl">BITS</span>
-            <div className="hidden sm:block w-[1px] h-6 bg-gray-300"></div>
-            <span className="font-bold text-[#134954] text-lg lg:text-xl">Accenture</span>
-            <div className="hidden sm:block w-[1px] h-6 bg-gray-300"></div>
-            <span className="font-bold text-[#134954] text-lg lg:text-xl">SmartQ</span>
-            <div className="hidden sm:block w-[1px] h-6 bg-gray-300"></div>
-            <span className="font-bold text-[#134954] text-lg lg:text-xl">GoKhana</span>
-            <div className="hidden sm:block w-[1px] h-6 bg-gray-300"></div>
-            <span className="font-bold text-[#134954] text-lg lg:text-xl">RedBricks</span>
-            <div className="hidden sm:block w-[1px] h-6 bg-gray-300"></div>
-            <span className="font-bold text-[#134954] text-lg lg:text-xl">Times Square</span>
+          <div className="flex flex-wrap justify-center items-center gap-x-4 md:gap-x-6 gap-y-4">
+            <span className="font-bold text-[#134954] text-base md:text-lg lg:text-xl">BITS</span>
+            <div className="hidden sm:block w-[1px] h-5 md:h-6 bg-gray-400"></div>
+            <span className="font-bold text-[#134954] text-base md:text-lg lg:text-xl">Accenture</span>
+            <div className="hidden sm:block w-[1px] h-5 md:h-6 bg-gray-400"></div>
+            <span className="font-bold text-[#134954] text-base md:text-lg lg:text-xl">SmartQ</span>
+            <div className="hidden sm:block w-[1px] h-5 md:h-6 bg-gray-400"></div>
+            <span className="font-bold text-[#134954] text-base md:text-lg lg:text-xl">GoKhana</span>
+            <div className="hidden sm:block w-[1px] h-5 md:h-6 bg-gray-400"></div>
+            <span className="font-bold text-[#134954] text-base md:text-lg lg:text-xl">RedBricks</span>
+            <div className="hidden sm:block w-[1px] h-5 md:h-6 bg-gray-400"></div>
+            <span className="font-bold text-[#134954] text-base md:text-lg lg:text-xl">Times Square</span>
           </div>
         </div>
 
