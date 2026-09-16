@@ -18,7 +18,7 @@ const Eat = () => {
   const imageY = useTransform(smoothProgress, [0, 1], ["0%", "4%"]);
 
   return (
-    <div ref={containerRef} className="relative w-full h-screen min-h-[700px] max-h-[1000px] font-poppins z-10 flex flex-col items-center justify-center overflow-hidden">
+    <div id="contact" ref={containerRef} className="relative w-full h-screen min-h-[700px] max-h-[1000px] font-poppins z-10 flex flex-col items-center justify-center overflow-hidden">
       
       {/* Background Image Container with Walk-through Animation */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
