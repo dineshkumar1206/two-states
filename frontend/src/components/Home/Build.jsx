@@ -11,17 +11,18 @@ const Build = () => {
 
   const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
   
-  // Zoom (scale)
-  const imageScale = useTransform(smoothProgress, [0, 1], [1.1, 1.25]);
+  const imageScale = useTransform(smoothProgress, [0, 1], [1.02, 1.65]);
+  const imageX = useTransform(smoothProgress, [0, 1], ["0%", "-15%"]);
+  const imageY = useTransform(smoothProgress, [0, 1], ["0%", "4%"]);
 
   return (
     <div id="build" ref={containerRef} className="relative w-full min-h-0 lg:min-h-screen flex flex-col font-poppins z-10 pb-12 lg:pb-32 pt-10 overflow-hidden">
-      
+
       {/* Top Image Section with Bottom Fade */}
       <div className="relative w-full max-w-[1600px] mx-auto" data-aos="fade-in" data-aos-duration="1500" data-aos-once="false">
         {/* The Image */}
         <div 
-          className="w-full h-[200px] md:h-[300px] lg:h-[450px] xl:h-[550px] overflow-hidden flex items-center justify-center"
+          className="w-full h-[200px] md:h-[300px] lg:h-[450px] xl:h-[550px] overflow-hidden flex items-center justify-start"
           style={{
             WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 25%)',
             maskImage: 'linear-gradient(to top, transparent 0%, black 25%)'
@@ -30,9 +31,11 @@ const Build = () => {
           <motion.img 
             src="/images/build.webp" 
             alt="Enterprise Dining Experience" 
-            className="w-full h-full object-cover object-center origin-center"
+            className="w-[125%] max-w-none h-full object-cover object-center origin-center"
             style={{
-              scale: imageScale
+              scale: imageScale,
+              x: imageX,
+              y: imageY
             }}
           />
         </div>
