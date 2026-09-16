@@ -2,25 +2,25 @@ import React from 'react';
 
 const OurStory = () => {
   return (
-    <div className="relative w-full pt-20 pb-4 md:py-20 lg:py-32 font-poppins z-10">
+    <div id="our-story" className="relative w-full pt-20 pb-4 md:py-20 lg:py-32 font-poppins z-10">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
         
         {/* 3 Column Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-center lg:items-start">
           
           {/* Left Column: Our Story */}
           <div className="flex flex-col" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
             {/* Overline */}
-            <div className="flex items-center space-x-4">
+            {/* <div className="flex items-center space-x-4">
               <span className="text-[11px] md:text-xs font-black tracking-[0.22em] text-[#1f3f4a] uppercase">
                 OUR STORY
               </span>
               <div className="w-10 h-[1.5px] bg-[#1f3f4a]"></div>
-            </div>
+            </div> */}
 
             {/* Heading */}
             <h2 
-              className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#103b44] leading-[1.05] mt-6"
+              className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#103b44] leading-[1.05]"
               style={{ WebkitTextStroke: '1.5px #103b44' }}
             >
               What happens<br />when two states meet?
@@ -49,7 +49,7 @@ const OurStory = () => {
           </div>
 
           {/* Center Column: Image */}
-          <div className="flex justify-center items-center py-8 lg:py-0" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="false">
+          <div className="flex justify-center items-center py-8 lg:py-0 lg:self-center" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="false">
             <img 
               src="/images/our-story.webp" 
               alt="Two States Drinks and Spices" 
@@ -60,12 +60,12 @@ const OurStory = () => {
           {/* Right Column: Our Food */}
           <div className="flex flex-col" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400" data-aos-once="false">
             {/* Overline */}
-            <div className="flex items-center space-x-4 mb-4 lg:mb-6">
+            {/* <div className="flex items-center space-x-4 mb-4 lg:mb-6">
               <span className="text-[11px] md:text-xs font-black tracking-[0.22em] text-[#1f3f4a] uppercase">
                 OUR FOOD
               </span>
               <div className="w-10 h-[1.5px] bg-[#1f3f4a]"></div>
-            </div>
+            </div> */}
 
             {/* Headings */}
             <h2 

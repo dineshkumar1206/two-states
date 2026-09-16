@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   return (
     <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[90]">
       <motion.a
-        href="https://wa.me/" // You can add the specific phone number here, like https://wa.me/1234567890
+        href="https://wa.me/919876543210" // Replace 919876543210 with your actual phone number (include country code)
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex items-center justify-center w-[56px] h-[56px] sm:w-[64px] sm:h-[64px] bg-[#25D366] rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] transition-colors"

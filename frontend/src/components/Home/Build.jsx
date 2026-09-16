@@ -15,7 +15,7 @@ const Build = () => {
   const imageScale = useTransform(smoothProgress, [0, 1], [1.1, 1.25]);
 
   return (
-    <div ref={containerRef} className="relative w-full min-h-0 lg:min-h-screen flex flex-col font-poppins z-10 pb-12 lg:pb-32 pt-10 overflow-hidden">
+    <div id="build" ref={containerRef} className="relative w-full min-h-0 lg:min-h-screen flex flex-col font-poppins z-10 pb-12 lg:pb-32 pt-10 overflow-hidden">
       
       {/* Top Image Section with Bottom Fade */}
       <div className="relative w-full max-w-[1600px] mx-auto" data-aos="fade-in" data-aos-duration="1500" data-aos-once="false">

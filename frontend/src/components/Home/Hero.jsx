@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden flex items-center pt-32 lg:pt-36 pb-12 font-poppins">
+    <div id="hero" className="relative w-full min-h-screen overflow-hidden flex items-center pt-32 lg:pt-36 pb-12 font-poppins">
 
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center relative z-10">
         
@@ -22,7 +22,7 @@ const Hero = () => {
           >
             ONE LOVE.
           </h1>
-          <h1 className="text-[5.5rem] sm:text-[7rem] lg:text-[130px] xl:text-[150px] font-caveat font-bold text-[#fbce3a] leading-[0.8] -mt-1 sm:-mt-2 lg:-mt-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.15)]" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+          <h1 className="text-[5.5rem] sm:text-[7rem] lg:text-[130px] xl:text-[150px] font-caveat font-bold text-[#fbce3a] leading-[0.8] mt-2 drop-shadow-[0_2px_2px_rgba(0,0,0,0.15)]" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
             FOOD.
           </h1>
           
@@ -35,7 +35,10 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 sm:mt-10 flex justify-center md:justify-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-offset="0">
-            <button className="bg-[#fbce3a] hover:bg-[#eab308] text-[#1a1a1a] font-bold text-sm px-8 py-4 rounded-full flex items-center space-x-3 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+            <button 
+              onClick={() => document.getElementById('our-story')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-[#fbce3a] hover:bg-[#eab308] text-[#1a1a1a] font-bold text-sm px-8 py-4 rounded-full flex items-center space-x-3 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+            >
               <span>DISCOVER OUR STORY</span>
               <span>&darr;</span>
             </button>

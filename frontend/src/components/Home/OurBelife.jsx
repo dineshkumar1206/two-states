@@ -41,12 +41,12 @@ const OurBelife = () => {
         <div className="w-full lg:w-[45%] xl:w-[42%] flex flex-col justify-center select-none text-center lg:text-left mt-8 lg:mt-0">
           
           {/* Overline */}
-          <div className="flex items-center justify-center lg:justify-start space-x-3 mb-2" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+          {/* <div className="flex items-center justify-center lg:justify-start space-x-3 mb-2" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
             <span className="text-[11px] md:text-xs font-black tracking-[0.22em] text-[#1f3f4a] uppercase">
               OUR BELIEF
             </span>
             <div className="w-9 h-[1.5px] bg-[#1f3f4a]"></div>
-          </div>
+          </div> */}
 
           {/* Marker Heading - Increased weight & subtle text-shadow for punch */}
           <h2 className="font-caveat-brush text-[2.5rem] sm:text-5xl lg:text-[56px] xl:text-[58px] leading-[1.1] font-black text-[#103b44] mt-4 tracking-normal drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150" data-aos-once="false">
