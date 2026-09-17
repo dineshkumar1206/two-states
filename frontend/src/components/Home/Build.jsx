@@ -4,16 +4,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 const Build = () => {
   const containerRef = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
 
-  const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
-  
-  const imageScale = useTransform(smoothProgress, [0, 1], [1.02, 1.65]);
-  const imageX = useTransform(smoothProgress, [0, 1], ["0%", "-15%"]);
-  const imageY = useTransform(smoothProgress, [0, 1], ["0%", "4%"]);
 
   return (
     <div id="build" ref={containerRef} className="relative w-full min-h-0 lg:min-h-screen flex flex-col font-poppins z-10 pb-12 lg:pb-32 pt-10 overflow-hidden">
@@ -31,13 +22,15 @@ const Build = () => {
           }}
         >
           <motion.img 
-            src="/images/build.webp" 
+            src="/images/build-1.webp" 
             alt="Enterprise Dining Experience" 
             className="w-[125%] max-w-none h-full object-cover object-center origin-center"
-            style={{
-              scale: imageScale,
-              x: imageX,
-              y: imageY
+            animate={{ x: ["0%", "-15%"] }}
+            transition={{
+              duration: 25,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear"
             }}
           />
         </div>

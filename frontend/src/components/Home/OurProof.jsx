@@ -4,16 +4,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 const OurProof = () => {
   const containerRef = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
 
-  const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
-  
-  const imageScale = useTransform(smoothProgress, [0, 1], [1.02, 1.65]);
-  const imageX = useTransform(smoothProgress, [0, 1], ["0%", "-15%"]);
-  const imageY = useTransform(smoothProgress, [0, 1], ["0%", "4%"]);
 
   return (
     <div ref={containerRef} className="relative w-full min-h-screen font-poppins z-10 pt-16 pb-16 overflow-hidden flex flex-col-reverse lg:block justify-center">
@@ -33,13 +24,15 @@ const OurProof = () => {
         }}
       >
         <motion.img 
-          src="/images/proof.png" 
+          src="/images/proof-1.png" 
           alt="Kitchen Operations" 
           className="w-[125%] max-w-none h-full object-cover object-center origin-center"
-          style={{
-            scale: imageScale,
-            x: imageX,
-            y: imageY
+          animate={{ x: ["0%", "-15%"] }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "linear"
           }}
         />
       </div>

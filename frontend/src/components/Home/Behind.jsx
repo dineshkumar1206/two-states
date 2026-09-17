@@ -3,7 +3,7 @@ import React from 'react';
 // ==========================================
 // CONFIGURATION: UPDATE YOUR IMAGES HERE
 // ==========================================
-const PROFILE_IMAGE = "/images/sankar.webp";
+const PROFILE_IMAGE = "/images/sankar.png";
 
 const BRANDS_DATA = [
   { 
@@ -67,7 +67,7 @@ const Behind = () => {
             <h2 className="font-caveat-brush font-black text-4xl sm:text-5xl lg:text-[60px] xl:text-[70px] leading-[1.05] text-[#134954] tracking-normal w-full transform -rotate-1 origin-left drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)] mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
               <span className="whitespace-normal sm:whitespace-nowrap">GOOD FOOD</span> <br className="hidden sm:block" />
               <span className="whitespace-normal sm:whitespace-nowrap">ALWAYS STARTS</span> <br className="hidden sm:block" />
-              <span className="text-[#06b6d4] whitespace-normal sm:whitespace-nowrap block mt-1 lg:mt-2">WITH PEOPLE.</span>
+              <span className="text-[#167d8f] whitespace-normal sm:whitespace-nowrap block mt-1 lg:mt-2">WITH PEOPLE.</span>
             </h2>
 
             {/* Simulated Brush Underline */}
@@ -109,7 +109,7 @@ const Behind = () => {
             {/* Overline */}
             <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
               <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#2c4755] uppercase">
-                MORE FROM 4S HOSPITALITY
+                OTHER BRANDS FROM OUR F&B STUDIO
               </span>
               <div className="w-12 h-[1px] bg-[#2c4755]"></div>
             </div>

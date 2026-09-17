@@ -47,7 +47,7 @@ const OurFormat = () => {
           {/* Heading */}
           <h2 className="font-caveat-brush text-4xl sm:text-5xl lg:text-[60px] xl:text-[68px] leading-[1.05] font-black text-[#134954] tracking-normal w-full transform -rotate-1 origin-left drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)] mt-2" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150" data-aos-once="false">
             <span className="whitespace-normal sm:whitespace-nowrap">ONE EXPERIENCE.</span><br className="hidden sm:block" />
-            <span className="text-[#06b6d4] whitespace-normal sm:whitespace-nowrap block mt-1 lg:mt-2">MANY WAYS TO DINE.</span>
+            <span className="text-[#167d8f] whitespace-normal sm:whitespace-nowrap block mt-1 lg:mt-2">MANY WAYS TO DINE.</span>
           </h2>
 
           {/* Simulated Brush Underline */}

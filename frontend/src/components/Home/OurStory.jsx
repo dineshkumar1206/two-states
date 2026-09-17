@@ -75,8 +75,8 @@ const OurStory = () => {
               We respect<br className="hidden md:block" /> the recipe.
             </h2>
             <h2 
-              className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#05a6c2] leading-[1.05] mt-1 lg:mt-2"
-              style={{ WebkitTextStroke: '1.5px #05a6c2' }}
+              className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#167d8f] leading-[1.05] mt-1 lg:mt-2"
+              style={{ WebkitTextStroke: '1.5px #167d8f' }}
             >
               We rethink<br className="hidden md:block" /> the experience.
             </h2>
@@ -91,7 +91,7 @@ const OurStory = () => {
 
             <p className="mt-6 text-sm sm:text-base lg:text-[17px] font-bold text-gray-500 leading-[1.6]">
               Traditional recipes. Familiar flavours.<br />
-              <span className="text-[#05a6c2]">A fresh way of experiencing them.</span>
+              <span className="text-[#167d8f]">A fresh way of experiencing them.</span>
             </p>
           </div>
 
