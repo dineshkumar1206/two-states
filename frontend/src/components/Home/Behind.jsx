@@ -74,7 +74,7 @@ const Behind = () => {
             <div className="h-[4px] w-4/5 max-w-[350px] bg-[#fbce3a] mt-4 mx-auto lg:mx-0 rounded-full transform -rotate-2 opacity-90" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="false"></div>
 
             {/* Paragraphs */}
-            <div className="mt-8 text-[14px] md:text-[15px] font-medium text-[#134954] leading-relaxed max-w-md mx-auto lg:mx-0 space-y-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
+            <div className="mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] max-w-md mx-auto lg:mx-0 space-y-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
               <p>
                 2 States is part of 4S Hospitality LLP, a food company built around creating brands, food experiences and dining businesses that people love.
               </p>
@@ -108,14 +108,14 @@ const Behind = () => {
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left pt-4 lg:pt-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="false">
             {/* Overline */}
             <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
-              <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#2c4755] uppercase">
+              <span className="text-[11px] md:text-[13px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
                 OTHER BRANDS FROM OUR F&B STUDIO
               </span>
               <div className="w-12 h-[1px] bg-[#2c4755]"></div>
             </div>
 
             {/* Paragraph */}
-            <div className="text-[14px] md:text-[15px] font-medium text-[#134954] leading-relaxed max-w-sm mb-10 mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="false">
+            <div className="text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] max-w-sm mb-10 mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="false">
               <p>A growing family of food brands, each with its own personality, cuisine and point of view.</p>
             </div>
 

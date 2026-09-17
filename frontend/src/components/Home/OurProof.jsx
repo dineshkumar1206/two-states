@@ -26,8 +26,8 @@ const OurProof = () => {
         <motion.img 
           src="/images/proof-1.png" 
           alt="Kitchen Operations" 
-          className="w-[125%] max-w-none h-full object-cover object-center origin-center"
-          animate={{ x: ["0%", "-15%"] }}
+          className="w-[120%] max-w-none h-full object-cover object-center origin-center"
+          animate={{ x: ["0%", "-10%"] }}
           transition={{
             duration: 25,
             repeat: Infinity,
@@ -59,7 +59,7 @@ const OurProof = () => {
           </h2>
 
           {/* Paragraphs */}
-          <div className="mt-6 md:mt-8 text-[14px] md:text-[15px] font-medium text-[#134954] leading-relaxed max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
+          <div className="mt-6 md:mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
             <p>
               From cafés and resto-cafés to corporate and institutional dining, we've built our experience by putting food, people and operations together in the real world.
             </p>
@@ -70,7 +70,7 @@ const OurProof = () => {
         <div className="mt-10 lg:mt-12 flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="false">
           <div className="flex items-center space-x-4 mb-6">
             <div className="hidden sm:block w-8 h-[1px] bg-[#2c4755]"></div>
-            <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
+              <span className="text-[11px] md:text-[13px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
               WHERE WE'RE ALREADY SERVING
             </span>
             <div className="hidden sm:block w-8 h-[1px] bg-[#2c4755]"></div>
@@ -97,7 +97,7 @@ const OurProof = () => {
           {/* Example Heading */}
           <div className="lg:col-span-1 lg:border-r lg:border-gray-300 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400" data-aos-once="false">
             <div className="flex items-center space-x-4 mb-4">
-              <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
+                <span className="text-[11px] md:text-[13px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
                 A REAL EXAMPLE
               </span>
               <div className="w-6 h-[1px] bg-[#2c4755]"></div>
@@ -120,7 +120,7 @@ const OurProof = () => {
               </div>
               <div className="flex flex-col items-center lg:items-start">
                 <h4 className="font-bold text-[#134954] text-xs tracking-wide uppercase mb-2 lg:mb-3 mt-2 lg:mt-0">THE CHALLENGE</h4>
-                <p className="text-[11px] md:text-xs font-medium text-[#134954] leading-relaxed">
+                <p className="text-[12px] md:text-[13px] lg:text-[14px] font-medium text-[#134954] leading-[1.7]">
                   Customer complaints, dropping footfall, sales and engagement.
                 </p>
               </div>
@@ -138,7 +138,7 @@ const OurProof = () => {
               </div>
               <div className="flex flex-col items-center lg:items-start">
                 <h4 className="font-bold text-[#134954] text-xs tracking-wide uppercase mb-2 lg:mb-3 mt-2 lg:mt-0">THE CHANGE</h4>
-                <p className="text-[11px] md:text-xs font-medium text-[#134954] leading-relaxed">
+                <p className="text-[12px] md:text-[13px] lg:text-[14px] font-medium text-[#134954] leading-[1.7]">
                   2 States introduced 3 live counters offering fresh, made-to-order food.
                 </p>
               </div>
@@ -155,7 +155,7 @@ const OurProof = () => {
               </div>
               <div className="flex flex-col items-center lg:items-start">
                 <h4 className="font-bold text-[#134954] text-xs tracking-wide uppercase mb-2 lg:mb-3 mt-2 lg:mt-0">THE RESULT</h4>
-                <p className="text-[11px] md:text-xs font-medium text-[#134954] leading-relaxed">
+                <p className="text-[12px] md:text-[13px] lg:text-[14px] font-medium text-[#134954] leading-[1.7]">
                   Increased footfall and sales, higher customer satisfaction, and regained customer trust.
                 </p>
               </div>

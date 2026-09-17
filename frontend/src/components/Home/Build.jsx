@@ -12,7 +12,7 @@ const Build = () => {
       {/* Top Image Section with Bottom Fade */}
       <div className="relative w-full max-w-[1600px] mx-auto" data-aos="fade-in" data-aos-duration="1500" data-aos-once="false">
         {/* The Image */}
-        <div 
+        <div
           className="w-full h-[200px] md:h-[300px] lg:h-[450px] xl:h-[550px] overflow-hidden flex items-center justify-start"
           style={{
             WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 15%, black 75%, transparent 100%)',
@@ -21,11 +21,11 @@ const Build = () => {
             maskComposite: 'intersect'
           }}
         >
-          <motion.img 
-            src="/images/build-1.webp" 
-            alt="Enterprise Dining Experience" 
-            className="w-[125%] max-w-none h-full object-cover object-center origin-center"
-            animate={{ x: ["0%", "-15%"] }}
+          <motion.img
+            src="/images/build-1.webp"
+            alt="Enterprise Dining Experience"
+            className="w-[120%] max-w-none h-full object-cover object-center origin-center"
+            animate={{ x: ["0%", "-10%"] }}
             transition={{
               duration: 25,
               repeat: Infinity,
@@ -39,7 +39,7 @@ const Build = () => {
       {/* Content Section */}
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8 mt-12 lg:mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Column: Heading */}
           {/* Left Column: Heading */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
@@ -63,7 +63,7 @@ const Build = () => {
 
           {/* Right Column: Text & Button */}
           <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left lg:pt-8" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300" data-aos-once="false">
-            
+
             <p className="text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] max-w-lg mx-auto lg:mx-0">
               We bring the 2 States experience to workplaces, institutions and large communities — with the same focus on great food, warm service and meaningful dining experiences.
             </p>

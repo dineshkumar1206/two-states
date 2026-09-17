@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 w-full z-[60] transition-all duration-300 font-poppins ${
+      <nav className={`absolute top-0 left-0 right-0 w-full z-[60] transition-all duration-300 font-poppins ${
         isScrolled ? 'bg-transparent backdrop-blur-md shadow-sm py-2 sm:py-3' : 'bg-transparent py-6'
       }`}>
         <div className="mx-auto w-full max-w-7xl px-4 md:px-8 flex items-center justify-between">
