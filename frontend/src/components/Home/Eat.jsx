@@ -47,7 +47,7 @@ const Eat = () => {
         <div className="relative mb-10 w-full flex flex-col items-center" data-aos="fade-up" data-aos-duration="1200" data-aos-once="false">
           <h2 className="font-caveat-brush font-black text-5xl sm:text-6xl lg:text-[70px] xl:text-[80px] leading-[1.05] text-[#134954] tracking-normal transform -rotate-2 drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]">
             <span className="whitespace-normal sm:whitespace-nowrap">LET'S BUILD SOMETHING</span><br className="hidden sm:block" />
-            <span className="text-[#167d8f] whitespace-normal sm:whitespace-nowrap block mt-1 lg:mt-2">PEOPLE WANT TO COME BACK TO.</span>
+            <span className="text-[#4bc2c4] whitespace-normal sm:whitespace-nowrap block mt-1 lg:mt-2">PEOPLE WANT TO COME BACK TO.</span>
           </h2>
           <div className="absolute -bottom-4 lg:-bottom-5 h-[5px] w-[85%] max-w-[700px] bg-[#fbce3a] rounded-full transform -rotate-1 opacity-95" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="false"></div>
         </div>

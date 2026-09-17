@@ -16,8 +16,8 @@ const Hero = () => {
             TWO STATES.
           </h1>
           <h1 
-            className="text-5xl sm:text-6xl lg:text-[70px] xl:text-[80px] font-caveat-brush font-bold text-[#167d8f] leading-[1.05] mt-1" 
-            style={{ WebkitTextStroke: '2px #167d8f' }}
+            className="text-5xl sm:text-6xl lg:text-[70px] xl:text-[80px] font-caveat-brush font-bold text-[#4bc2c4] leading-[1.05] mt-1" 
+            style={{ WebkitTextStroke: '2px #4bc2c4' }}
             data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150"
           >
             ONE LOVE.

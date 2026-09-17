@@ -36,7 +36,7 @@ const OurStory = () => {
             {/* Multi-colored text */}
             <div className="mt-8 text-[15px] sm:text-base lg:text-[17px] font-medium text-gray-700 leading-relaxed space-y-1.5">
               <p><span className="text-[#d97706] font-bold text-lg sm:text-xl drop-shadow-sm">Punjab</span> brings the richness.</p>
-              <p><span className="text-[#167d8f] font-bold text-base sm:text-lg">Tamil Nadu</span> brings the soul.</p>
+              <p><span className="text-[#4bc2c4] font-bold text-base sm:text-lg">Tamil Nadu</span> brings the soul.</p>
               <p><span className="text-[#134954] font-bold text-base sm:text-lg">Delhi</span> brings the attitude.</p>
               <p className="pt-3 text-gray-700 font-bold text-base sm:text-lg">And 2 States brings them all to the same table.</p>
             </div>
@@ -75,8 +75,8 @@ const OurStory = () => {
               We respect<br className="hidden md:block" /> the recipe.
             </h2>
             <h2 
-              className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#167d8f] leading-[1.05] mt-1 lg:mt-2"
-              style={{ WebkitTextStroke: '1.5px #167d8f' }}
+              className="font-caveat-brush text-5xl sm:text-6xl lg:text-[54px] xl:text-[62px] font-bold text-[#4bc2c4] leading-[1.05] mt-1 lg:mt-2"
+              style={{ WebkitTextStroke: '1.5px #4bc2c4' }}
             >
               We rethink<br className="hidden md:block" /> the experience.
             </h2>
@@ -91,7 +91,7 @@ const OurStory = () => {
 
             <p className="mt-6 text-sm sm:text-base lg:text-[17px] font-bold text-gray-700 leading-[1.6]">
               Traditional recipes. Familiar flavours.<br />
-              <span className="text-[#167d8f]">A fresh way of experiencing them.</span>
+              <span className="text-[#4bc2c4]">A fresh way of experiencing them.</span>
             </p>
           </div>
 
