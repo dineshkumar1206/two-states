@@ -1,8 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const OurProof = () => {
   const containerRef = useRef(null);
+  const [animDuration, setAnimDuration] = useState(25);
+
+  useEffect(() => {
+    const handleResize = () => setAnimDuration(window.innerWidth < 768 ? 12 : 25);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
 
 
@@ -29,7 +37,7 @@ const OurProof = () => {
           className="w-[120%] max-w-none h-full object-cover object-center origin-center"
           animate={{ x: ["0%", "-10%"] }}
           transition={{
-            duration: 25,
+            duration: animDuration,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "linear"
@@ -45,7 +53,7 @@ const OurProof = () => {
           
           {/* Strong radial opacity behind the text to create a cutout/hill effect for maximum readability */}
           <div 
-            className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] max-w-[1000px] h-[250%] -z-10 pointer-events-none blur-xl"
+            className="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] max-w-[1000px] h-[250%] -z-10 pointer-events-none blur-xl opacity-40 md:opacity-100"
             style={{
               background: 'radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,245,0.85) 45%, transparent 70%)'
             }}

@@ -1,8 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const Build = () => {
   const containerRef = useRef(null);
+  const [animDuration, setAnimDuration] = useState(25);
+
+  useEffect(() => {
+    const handleResize = () => setAnimDuration(window.innerWidth < 768 ? 12 : 25);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
 
 
@@ -27,7 +35,7 @@ const Build = () => {
             className="w-[120%] max-w-none h-full object-cover object-center origin-center"
             animate={{ x: ["0%", "-10%"] }}
             transition={{
-              duration: 25,
+              duration: animDuration,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "linear"

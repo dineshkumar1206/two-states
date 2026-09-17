@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Scroll from '../Scroll';
+import ContactModal from '../Home/ContactModal';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +41,7 @@ const Navbar = () => {
           <Scroll to="#our-story" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">OUR STORY</Scroll>
           <Scroll to="#build" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">ENTERPRISE</Scroll>
           <Scroll to="#behind" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">OUR BRANDS</Scroll>
-          <Scroll to="#contact" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">CONTACT</Scroll>
+          <button onClick={() => setIsContactModalOpen(true)} className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap outline-none cursor-pointer uppercase">CONTACT</button>
         </div>
 
         {/* CTA Button and Mobile Menu Toggle */}
@@ -74,11 +76,12 @@ const Navbar = () => {
               <Scroll to="#our-story" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">OUR STORY</Scroll>
               <Scroll to="#build" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">ENTERPRISE</Scroll>
               <Scroll to="#behind" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">OUR BRANDS</Scroll>
-              <Scroll to="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">CONTACT</Scroll>
+              <button onClick={() => { setIsMobileMenuOpen(false); setIsContactModalOpen(true); }} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200 outline-none uppercase text-center w-full block">CONTACT</button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </>
   );
 };
