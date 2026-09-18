@@ -42,7 +42,7 @@ const OurProof = () => {
           transition={{
             duration: animConfig.duration,
             repeat: Infinity,
-            repeatType: "loop",
+            repeatType: "reverse",
             ease: "linear"
           }}
         />

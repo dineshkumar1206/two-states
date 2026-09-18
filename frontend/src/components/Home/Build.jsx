@@ -40,7 +40,7 @@ const Build = () => {
             transition={{
               duration: animConfig.duration,
               repeat: Infinity,
-              repeatType: "loop",
+              repeatType: "reverse",
               ease: "linear"
             }}
           />
@@ -81,7 +81,7 @@ const Build = () => {
 
             {/* Pipe Separated List */}
             <p className="mt-6 text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-[#103b44] leading-relaxed flex flex-wrap justify-center lg:justify-start items-center gap-y-2 w-full" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="450" data-aos-once="false">
-              <span>Thoughtful menus</span>
+              <span>Curated menus</span>
               <span className="text-[#84a3b3] mx-2.5 font-normal">|</span>
               <span>Consistent quality</span>
               <span className="text-[#84a3b3] mx-2.5 font-normal">|</span>

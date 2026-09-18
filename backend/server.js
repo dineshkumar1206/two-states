@@ -21,11 +21,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+// For cPanel Passenger which passes the full path
+app.use('/2-state/api', contactRoutes); 
+// For local development
 app.use('/api', contactRoutes);
 
 // Test Route
 app.get('/', (req, res) => {
   res.send('Two States API is running.');
+});
+app.get('/2-state', (req, res) => {
+  res.send('Two States API is running on cPanel.');
 });
 
 // Sync Database and start server

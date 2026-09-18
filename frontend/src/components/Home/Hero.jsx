@@ -31,7 +31,7 @@ const Hero = () => {
           </h3>
           
           <p className="text-[#134954] text-sm sm:text-base lg:text-[17px] max-w-md mx-auto md:mx-0 mt-4 sm:mt-5 leading-relaxed font-medium" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
-            2 States brings together the richness of Punjab, the soul of Tamil Nadu and the diversity of Delhi — rooted in traditional recipes, reimagined for the way<br/> we dine today.
+            2 States brings together the richness of Punjab, the soul of Tamil Nadu and the diversity of Delhi — rooted in traditional recipes, reimagined for the way <br className="hidden md:block" /> we dine today.
           </p>
 
           <div className="mt-8 sm:mt-10 flex justify-center md:justify-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-offset="0">

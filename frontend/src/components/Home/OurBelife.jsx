@@ -2,7 +2,7 @@ import React from 'react';
 
 const OurBelife = () => {
   return (
-    <section className="relative w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center overflow-hidden py-16 lg:py-0 font-poppins">
+    <section className="relative w-full min-h-screen flex flex-col lg:flex-row items-center justify-center overflow-hidden py-16 lg:py-0 font-poppins">
       
       {/* Right-Center Image with feathered opacity on Top, Left, and Bottom */}
       <div 

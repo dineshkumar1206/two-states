@@ -13,7 +13,7 @@ const BRANDS_DATA = [
     logo: "/images/idlish-logo.png", 
     link: "https://idlish.shop/",
     aosDelay: "300",
-    imgClass: "h-20 sm:h-24 w-auto"
+    imgClass: "h-20 sm:h-24 lg:h-20 w-auto"
   },
   { 
     id: 2, 
@@ -22,7 +22,7 @@ const BRANDS_DATA = [
     logo: "/images/chettinad-logo.png", 
     link: "https://chettinad.co.in/",
     aosDelay: "450",
-    imgClass: "h-32 sm:h-40 w-auto"
+    imgClass: "h-28 sm:h-32 lg:h-28 w-auto"
   },
   { 
     id: 3, 
@@ -31,7 +31,7 @@ const BRANDS_DATA = [
     logo: "/images/idaily-logo.webp", 
     link: "#",
     aosDelay: "600",
-    imgClass: "h-28 sm:h-36 w-auto"
+    imgClass: "h-24 sm:h-28 lg:h-24 w-auto"
   },
   { 
     id: 4, 
@@ -40,18 +40,18 @@ const BRANDS_DATA = [
     logo: "/images/naanstop-logo.png", 
     link: "#",
     aosDelay: "750",
-    imgClass: "h-20 sm:h-24 w-auto scale-[1.5] sm:scale-[1.7]"
+    imgClass: "h-20 sm:h-24 lg:h-20 w-auto scale-[1.4] sm:scale-[1.5]"
   }
 ];
 
 const Behind = () => {
   return (
-    <div id="behind" className="relative w-full pt-16 pb-4 sm:pb-0 mb-0 sm:mb-0 lg:pt-24 lg:pb-8 font-poppins z-10 overflow-hidden">
+    <div id="behind" className="relative w-full min-h-screen flex items-center pt-16 pb-4 sm:pb-0 mb-0 sm:mb-0 lg:py-0 font-poppins z-10 overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           
           {/* Left Column */}
-          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left relative lg:pr-8" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left relative lg:pr-6" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
             {/* Vertical Divider (Desktop Only) */}
             <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[1px] bg-gray-200"></div>
 
@@ -74,7 +74,7 @@ const Behind = () => {
             <div className="h-[4px] w-4/5 max-w-[350px] bg-[#fbce3a] mt-4 mx-auto lg:mx-0 rounded-full transform -rotate-2 opacity-90" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="false"></div>
 
             {/* Paragraphs */}
-            <div className="mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] w-full mx-auto lg:mx-0 space-y-4 pr-0 lg:pr-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
+            <div className="mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] w-full mx-auto lg:mx-0 space-y-4 pr-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
               <p>
                 2 States is part of 4S Hospitality LLP, a food company built around creating brands, food experiences and dining businesses that people love.
               </p>
