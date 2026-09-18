@@ -115,7 +115,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                   required
                   rows="3"
                   className="w-full px-4 sm:px-5 py-3 sm:py-3.5 bg-[#f8fafc] border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#06b6d4]/40 focus:border-[#06b6d4] hover:border-gray-300 transition-all duration-300 text-[#134954] font-medium placeholder-gray-400 resize-none shadow-sm sm:rows-4"
-                  placeholder="Tell us about your project..."
+                  placeholder="TELL US HOW WE CAN WORK TOGETHER AND CREATE BETTER DINING EXPERIENCES..."
                 ></textarea>
               </div>
 

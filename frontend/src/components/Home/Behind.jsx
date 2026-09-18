@@ -48,10 +48,10 @@ const Behind = () => {
   return (
     <div id="behind" className="relative w-full pt-16 pb-4 sm:pb-0 mb-0 sm:mb-0 lg:pt-24 lg:pb-8 font-poppins z-10 overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           
           {/* Left Column */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left relative lg:pr-8" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left relative lg:pr-8" data-aos="fade-right" data-aos-duration="1200" data-aos-once="false">
             {/* Vertical Divider (Desktop Only) */}
             <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[1px] bg-gray-200"></div>
 
@@ -74,7 +74,7 @@ const Behind = () => {
             <div className="h-[4px] w-4/5 max-w-[350px] bg-[#fbce3a] mt-4 mx-auto lg:mx-0 rounded-full transform -rotate-2 opacity-90" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300" data-aos-once="false"></div>
 
             {/* Paragraphs */}
-            <div className="mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] max-w-md mx-auto lg:mx-0 space-y-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
+            <div className="mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] w-full mx-auto lg:mx-0 space-y-4 pr-0 lg:pr-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
               <p>
                 2 States is part of 4S Hospitality LLP, a food company built around creating brands, food experiences and dining businesses that people love.
               </p>
@@ -84,7 +84,7 @@ const Behind = () => {
             </div>
 
             {/* Profile Block */}
-            <div className="mt-8 flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-8 text-left w-full max-w-lg mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="false">
+            <div className="mt-8 flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-8 text-left w-full mx-auto lg:mx-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="false">
               <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 shrink-0 overflow-hidden rounded-md bg-gray-100 shadow-md">
                 {/* Profile Image */}
                 <img src={PROFILE_IMAGE} alt="Sankar Kasirajan" className="w-full h-full object-cover" />
@@ -105,7 +105,7 @@ const Behind = () => {
           </div>
 
           {/* Right Column */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left pt-4 lg:pt-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="false">
+          <div className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left pt-4 lg:pt-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="false">
             {/* Overline */}
             <div className="flex items-center justify-center lg:justify-start space-x-4 mb-4 w-full">
               <span className="text-[11px] md:text-[13px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">

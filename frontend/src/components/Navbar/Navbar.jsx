@@ -40,6 +40,7 @@ const Navbar = () => {
           <Scroll to="/" className="border-b-2 border-[#167d8f] pb-1 text-[#167d8f] whitespace-nowrap">HOME</Scroll>
           <Scroll to="#our-story" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">OUR STORY</Scroll>
           <Scroll to="#build" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">ENTERPRISE</Scroll>
+          <Scroll to="#case-study" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">CASE STUDY</Scroll>
           <Scroll to="#behind" className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap">OUR BRANDS</Scroll>
           <button onClick={() => setIsContactModalOpen(true)} className="hover:text-[#167d8f] transition-colors pb-1 whitespace-nowrap outline-none cursor-pointer uppercase">CONTACT</button>
         </div>
@@ -76,6 +77,7 @@ const Navbar = () => {
               <Scroll to="#our-story" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">OUR STORY</Scroll>
               <Scroll to="#build" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">ENTERPRISE</Scroll>
               <Scroll to="#behind" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">OUR BRANDS</Scroll>
+              <Scroll to="#case-study" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200">CASE STUDY</Scroll>
               <button onClick={() => { setIsMobileMenuOpen(false); setIsContactModalOpen(true); }} className="hover:text-[#167d8f] transition-colors pb-3 border-b border-gray-200 outline-none uppercase text-center w-full block">CONTACT</button>
             </div>
           </motion.div>

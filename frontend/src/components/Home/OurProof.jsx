@@ -3,10 +3,13 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const OurProof = () => {
   const containerRef = useRef(null);
-  const [animDuration, setAnimDuration] = useState(25);
+  const [animConfig, setAnimConfig] = useState({ duration: 8, xStart: "-8%" });
 
   useEffect(() => {
-    const handleResize = () => setAnimDuration(window.innerWidth < 768 ? 12 : 25);
+    const handleResize = () => setAnimConfig({
+      duration: window.innerWidth < 768 ? 4 : 8,
+      xStart: window.innerWidth < 768 ? "-12%" : "-8%"
+    });
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -34,12 +37,12 @@ const OurProof = () => {
         <motion.img 
           src="/images/proof-1.png" 
           alt="Kitchen Operations" 
-          className="w-[120%] max-w-none h-full object-cover object-center origin-center"
-          animate={{ x: ["0%", "-10%"] }}
+          className="w-[130%] md:w-[120%] max-w-none h-full object-cover object-center origin-center"
+          animate={{ x: [animConfig.xStart, "0%"] }}
           transition={{
-            duration: animDuration,
+            duration: animConfig.duration,
             repeat: Infinity,
-            repeatType: "reverse",
+            repeatType: "loop",
             ease: "linear"
           }}
         />
@@ -75,7 +78,7 @@ const OurProof = () => {
         </div>
 
         {/* Middle Section: Serving */}
-        <div className="mt-10 lg:mt-12 flex flex-col items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="false">
+        <div id="case-study" className="mt-10 lg:mt-12 pt-8 lg:pt-10 flex flex-col items-center scroll-mt-10" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="false">
           <div className="flex items-center space-x-4 mb-6">
             <div className="hidden sm:block w-8 h-[1px] bg-[#2c4755]"></div>
               <span className="text-[11px] md:text-[13px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
@@ -106,9 +109,9 @@ const OurProof = () => {
           <div className="lg:col-span-1 lg:border-r lg:border-gray-300 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400" data-aos-once="false">
             <div className="flex items-center space-x-4 mb-4">
                 <span className="text-[11px] md:text-[13px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
-                A REAL EXAMPLE
+                We saw the gap.<br />We changed the game.
               </span>
-              <div className="w-6 h-[1px] bg-[#2c4755]"></div>
+              
             </div>
             <h3 className="font-caveat-brush font-bold text-3xl md:text-4xl text-[#134954] leading-[1.1] transform -rotate-1 origin-left tracking-wider drop-shadow-sm mt-4 w-full">
               <span className="whitespace-normal sm:whitespace-nowrap">3 LIVE COUNTERS.</span> <br className="hidden sm:block" />

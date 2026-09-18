@@ -21,6 +21,7 @@ const Footer = () => {
           <Scroll to="/" className="hover:text-[#06b6d4] transition-colors duration-300">HOME</Scroll>
           <Scroll to="#our-story" className="hover:text-[#06b6d4] transition-colors duration-300">OUR STORY</Scroll>
           <Scroll to="#build" className="hover:text-[#06b6d4] transition-colors duration-300">ENTERPRISE</Scroll>
+          <Scroll to="#case-study" className="hover:text-[#06b6d4] transition-colors duration-300">CASE STUDY</Scroll>
           <Scroll to="#behind" className="hover:text-[#06b6d4] transition-colors duration-300">OUR BRANDS</Scroll>
           <button onClick={() => setIsContactModalOpen(true)} className="hover:text-[#06b6d4] cursor-pointer transition-colors duration-300 outline-none uppercase">CONTACT</button>
         </div>

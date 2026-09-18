@@ -3,10 +3,13 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const Build = () => {
   const containerRef = useRef(null);
-  const [animDuration, setAnimDuration] = useState(25);
+  const [animConfig, setAnimConfig] = useState({ duration: 8, xStart: "-8%" });
 
   useEffect(() => {
-    const handleResize = () => setAnimDuration(window.innerWidth < 768 ? 6 : 12);
+    const handleResize = () => setAnimConfig({
+      duration: window.innerWidth < 768 ? 4 : 8,
+      xStart: window.innerWidth < 768 ? "-12%" : "-8%"
+    });
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -32,10 +35,10 @@ const Build = () => {
           <motion.img
             src="/images/build-1.webp"
             alt="Enterprise Dining Experience"
-            className="w-[120%] max-w-none h-full object-cover object-center origin-center"
-            animate={{ x: ["-8%", "0%"] }}
+            className="w-[130%] md:w-[120%] max-w-none h-full object-cover object-center origin-center"
+            animate={{ x: [animConfig.xStart, "0%"] }}
             transition={{
-              duration: animDuration,
+              duration: animConfig.duration,
               repeat: Infinity,
               repeatType: "loop",
               ease: "linear"
