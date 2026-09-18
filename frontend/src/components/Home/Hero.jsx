@@ -26,12 +26,12 @@ const Hero = () => {
             FOOD.
           </h1>
           
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-700 mt-6 sm:mt-8 tracking-wide" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#134954] mt-6 sm:mt-8 tracking-wide" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">
             Different cultures.<br className="block md:hidden"/> Different flavours.<br/> One table.
           </h3>
           
-          <p className="text-gray-700 text-sm sm:text-base lg:text-[17px] max-w-md mx-auto md:mx-0 mt-4 sm:mt-5 leading-relaxed font-medium" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
-            2 States brings together the richness of Punjab, the soul of Tamil Nadu and the energy of Delhi — rooted in traditional recipes, reimagined for the way<br/> we eat today.
+          <p className="text-[#134954] text-sm sm:text-base lg:text-[17px] max-w-md mx-auto md:mx-0 mt-4 sm:mt-5 leading-relaxed font-medium" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
+            2 States brings together the richness of Punjab, the soul of Tamil Nadu and the diversity of Delhi — rooted in traditional recipes, reimagined for the way<br/> we dine today.
           </p>
 
           <div className="mt-8 sm:mt-10 flex justify-center md:justify-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-offset="0">

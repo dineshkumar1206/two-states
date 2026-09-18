@@ -34,15 +34,15 @@ const OurStory = () => {
             <div className="h-[4px] w-4/5 max-w-[280px] bg-[#f5b82e] mt-2 rounded-full transform -rotate-1 opacity-95"></div>
 
             {/* Multi-colored text */}
-            <div className="mt-8 text-[15px] sm:text-base lg:text-[17px] font-medium text-gray-700 leading-relaxed space-y-1.5">
-              <p><span className="text-[#d97706] font-bold text-lg sm:text-xl drop-shadow-sm">Punjab</span> brings the richness.</p>
-              <p><span className="text-[#4bc2c4] font-bold text-base sm:text-lg">Tamil Nadu</span> brings the soul.</p>
-              <p><span className="text-[#134954] font-bold text-base sm:text-lg">Delhi</span> brings the attitude.</p>
-              <p className="pt-3 text-gray-700 font-bold text-base sm:text-lg">And 2 States brings them all to the same table.</p>
+            <div className="mt-8 text-[15px] sm:text-base lg:text-[17px] font-medium text-[#134954] leading-relaxed space-y-1.5">
+              <p><span className="text-[#fbce3a] font-bold text-lg sm:text-xl drop-shadow-sm">Punjab</span> brings grandeur.</p>
+              <p><span className="text-[#4bc2c4] font-bold text-base sm:text-lg">Tamil Nadu</span> brings simplicity.</p>
+              <p><span className="text-[#134954] font-bold text-base sm:text-lg">Delhi</span> brings the diversity.</p>
+              <p className="pt-3 text-[#134954] font-bold text-base sm:text-lg">And 2 States brings them all to the same table.</p>
             </div>
 
             {/* Paragraph */}
-            <p className="mt-6 text-sm sm:text-base lg:text-[16px] text-gray-700 leading-[1.7] pr-0 md:pr-4 font-medium">
+            <p className="mt-6 text-sm sm:text-base lg:text-[16px] text-[#134954] leading-[1.7] pr-0 md:pr-4 font-medium">
               2 States was born from a simple idea — that food can bring very different worlds together. 
               Different cultures. Different food. Different stories. Yet somehow, around a table, it all makes sense.
             </p>
@@ -84,12 +84,12 @@ const OurStory = () => {
             <div className="h-[4px] w-full max-w-[85%] bg-[#f5b82e] mt-4 lg:mt-5 rounded-full transform -rotate-1 opacity-95"></div>
 
             {/* Paragraphs */}
-            <p className="mt-8 text-sm sm:text-base lg:text-[16px] text-gray-700 leading-[1.7] font-medium">
+            <p className="mt-8 text-sm sm:text-base lg:text-[16px] text-[#134954] leading-[1.7] font-medium">
               From the richness of Punjab to the grounded flavours of Tamil Nadu and the energy of Delhi, 
               we stay true to the traditions that inspire us — while presenting them for today's diner.
             </p>
 
-            <p className="mt-6 text-sm sm:text-base lg:text-[17px] font-bold text-gray-700 leading-[1.6]">
+            <p className="mt-6 text-sm sm:text-base lg:text-[17px] font-bold text-[#134954] leading-[1.6]">
               Traditional recipes. Familiar flavours.<br />
               <span className="text-[#4bc2c4]">A fresh way of experiencing them.</span>
             </p>

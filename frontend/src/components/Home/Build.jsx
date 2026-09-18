@@ -6,7 +6,7 @@ const Build = () => {
   const [animDuration, setAnimDuration] = useState(25);
 
   useEffect(() => {
-    const handleResize = () => setAnimDuration(window.innerWidth < 768 ? 12 : 25);
+    const handleResize = () => setAnimDuration(window.innerWidth < 768 ? 6 : 12);
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -33,11 +33,11 @@ const Build = () => {
             src="/images/build-1.webp"
             alt="Enterprise Dining Experience"
             className="w-[120%] max-w-none h-full object-cover object-center origin-center"
-            animate={{ x: ["0%", "-10%"] }}
+            animate={{ x: ["-8%", "0%"] }}
             transition={{
               duration: animDuration,
               repeat: Infinity,
-              repeatType: "reverse",
+              repeatType: "loop",
               ease: "linear"
             }}
           />
