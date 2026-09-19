@@ -13,7 +13,7 @@ const BRANDS_DATA = [
     logo: "/images/idlish-logo.png", 
     link: "https://idlish.shop/",
     aosDelay: "300",
-    imgClass: "h-20 sm:h-24 lg:h-20 w-auto"
+    imgClass: "h-16 sm:h-20 lg:h-16 w-auto"
   },
   { 
     id: 2, 
@@ -22,7 +22,7 @@ const BRANDS_DATA = [
     logo: "/images/chettinad-logo.png", 
     link: "https://chettinad.co.in/",
     aosDelay: "450",
-    imgClass: "h-28 sm:h-32 lg:h-28 w-auto"
+    imgClass: "h-20 sm:h-24 lg:h-20 w-auto"
   },
   { 
     id: 3, 
@@ -31,7 +31,7 @@ const BRANDS_DATA = [
     logo: "/images/idaily-logo.webp", 
     link: "#",
     aosDelay: "600",
-    imgClass: "h-24 sm:h-28 lg:h-24 w-auto"
+    imgClass: "h-20 sm:h-24 lg:h-20 w-auto"
   },
   { 
     id: 4, 
@@ -40,7 +40,7 @@ const BRANDS_DATA = [
     logo: "/images/naanstop-logo.png", 
     link: "#",
     aosDelay: "750",
-    imgClass: "h-20 sm:h-24 lg:h-20 w-auto scale-[1.4] sm:scale-[1.5]"
+    imgClass: "h-20 sm:h-24 lg:h-20 w-auto scale-[1.3] sm:scale-[1.5]"
   }
 ];
 
@@ -76,10 +76,7 @@ const Behind = () => {
             {/* Paragraphs */}
             <div className="mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] w-full mx-auto lg:mx-0 space-y-4 pr-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
               <p>
-                2 States is part of 4S Hospitality LLP, a food company built around creating brands, food experiences and dining businesses that people love.
-              </p>
-              <p>
-                From neighbourhood cafés to enterprise dining, our journey has always been about the same thing — better food, more people, brighter days.
+                2 States is part of 4S Hospitality LLP, an F&B concept and brand studio creating food experiences and dining businesses people love. From neighbourhood cafés to enterprise dining, we believe better food brings people together
               </p>
             </div>
 
@@ -120,10 +117,10 @@ const Behind = () => {
             </div>
 
             {/* Brands Grid */}
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-y-12 sm:gap-y-16 gap-x-8 lg:gap-x-12 relative">
+            <div className="w-full grid grid-cols-2 gap-y-8 sm:gap-y-16 gap-x-4 sm:gap-x-8 lg:gap-x-12 relative">
               {/* Horizontal & Vertical Dividers for Desktop Grid lines */}
-              <div className="hidden sm:block absolute left-0 right-0 top-[45%] h-[1px] bg-gray-200"></div>
-              <div className="hidden sm:block absolute top-0 bottom-0 left-1/2 w-[1px] bg-gray-200 -translate-x-1/2"></div>
+              <div className="block absolute left-0 right-0 top-[50%] h-[1px] bg-gray-200"></div>
+              <div className="block absolute top-0 bottom-0 left-1/2 w-[1px] bg-gray-200 -translate-x-1/2"></div>
 
               {BRANDS_DATA.map((brand) => (
                 brand.link !== "#" ? (

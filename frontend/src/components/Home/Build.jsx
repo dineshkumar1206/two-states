@@ -33,7 +33,7 @@ const Build = () => {
           }}
         >
           <motion.img
-            src="/images/build-1.webp"
+            src="/images/build-2.webp"
             alt="Enterprise Dining Experience"
             className="w-[130%] md:w-[120%] max-w-none h-full object-cover object-center origin-center"
             animate={{ x: [animConfig.xStart, "0%"] }}

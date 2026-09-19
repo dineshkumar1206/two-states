@@ -60,9 +60,9 @@ const OurBelife = () => {
 
           {/* Paragraphs - Regular */}
           <div className="mt-8 text-sm sm:text-base lg:text-[17px] font-medium text-[#134954] leading-[1.7] max-w-[420px] mx-auto lg:mx-0 space-y-3.5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450" data-aos-once="false">
-            <p>From a table for two to a table for thousands, food has always been about bringing people together.</p>
-            <p>It creates conversations, breaks routines, brings people closer and turns everyday moments into something worth remembering.</p>
-            <p>At 2 States, we bring that same spirit to every place people eat, meet and connect.</p>
+            <p>From a table for two to a cafeteria for thousands, food brings people together.</p>
+            <p>It sparks conversations, breaks routines and makes everyday moments memorable.</p>
+            <p>That's the spirit we bring to every place people eat, meet and connect.</p>
           </div>
 
           {/* Cursive Sign-off */}

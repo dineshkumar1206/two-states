@@ -85,8 +85,7 @@ const OurStory = () => {
 
             {/* Paragraphs */}
             <p className="mt-8 text-sm sm:text-base lg:text-[16px] text-[#134954] leading-[1.7] font-medium">
-              From the richness of Punjab to the grounded flavours of Tamil Nadu and the energy of Delhi, 
-              we stay true to the traditions that inspire us — while presenting them for today's diner.
+            We take the flavours people know and love, and rethink how they’re experienced — bringing something fresh to every table.
             </p>
 
             <p className="mt-6 text-sm sm:text-base lg:text-[17px] font-bold text-[#134954] leading-[1.6]">

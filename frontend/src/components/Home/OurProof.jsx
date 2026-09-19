@@ -35,7 +35,7 @@ const OurProof = () => {
         }}
       >
         <motion.img 
-          src="/images/proof-1.png" 
+          src="/images/proof-1.webp" 
           alt="Kitchen Operations" 
           className="w-[130%] md:w-[120%] max-w-none h-full object-cover object-center origin-center"
           animate={{ x: [animConfig.xStart, "0%"] }}
@@ -107,16 +107,10 @@ const OurProof = () => {
           
           {/* Example Heading */}
           <div className="lg:col-span-1 lg:border-r lg:border-gray-300 lg:pr-8 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400" data-aos-once="false">
-            <div className="flex items-center space-x-4 mb-4">
-                <span className="text-[11px] md:text-[13px] font-bold tracking-[0.2em] text-[#2c4755] uppercase">
-                We saw the gap.<br />We changed the game.
-              </span>
-              
-            </div>
             <h3 className="font-caveat-brush font-bold text-3xl md:text-4xl text-[#134954] leading-[1.1] transform -rotate-1 origin-left tracking-wider drop-shadow-sm mt-4 w-full">
-              <span className="whitespace-normal sm:whitespace-nowrap">3 LIVE COUNTERS.</span> <br className="hidden sm:block" />
-              <span className="whitespace-normal sm:whitespace-nowrap">A STRONGER</span> <br className="hidden sm:block" />
-              <span className="whitespace-normal sm:whitespace-nowrap">DINING EXPERIENCE.</span>
+              <span className="whitespace-normal sm:whitespace-nowrap">WE SAW THE GAP.</span> <br className="hidden sm:block" />
+              <span className="whitespace-normal sm:whitespace-nowrap">WE CHANGED</span> <br className="hidden sm:block" />
+              <span className="whitespace-normal sm:whitespace-nowrap">THE GAME.</span>
             </h3>
             <div className="h-[3px] w-3/4 max-w-[200px] bg-[#fbce3a] mt-3 mx-auto lg:mx-0 rounded-full transform -rotate-2 opacity-90"></div>
           </div>
@@ -173,6 +167,12 @@ const OurProof = () => {
             </div>
           </div>
 
+        </div>
+
+        <div className="w-full mt-10 flex justify-center text-center px-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800" data-aos-once="false">
+          <p className="text-[#134954] font-semibold text-[13px] md:text-[15px] uppercase tracking-wider bg-[#fceba8]/50 px-6 py-3 rounded-full shadow-sm inline-block">
+            3 live counters, an improved dining experience.
+          </p>
         </div>
 
       </div>
